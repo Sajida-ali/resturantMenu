@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+    <TextView
+        android:id="@+id/meal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add To Menu"
+        android:textSize="35dp"
+        android:textColor="@color/purple_700"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="30dp"/>
+
+    <ImageView
+        android:id="@+id/profileImg"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="155dp"
+        android:layout_marginTop="110dp"
+        android:src="@color/common_google_signin_btn_text_light_pressed" />
+
+    <EditText
+        android:id="@+id/PrudctName"
+        android:layout_width="250dp"
+        android:layout_height="42dp"
+        android:layout_weight="1"
+        android:hint="Prudct Name"
+        android:textColorHint="@color/purple_200"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:layout_marginTop="220dp"
+        android:background="@drawable/input_design"
+        android:layout_marginLeft="80dp"/>
+
+    <EditText
+        android:id="@+id/description"
+        android:layout_width="250dp"
+        android:layout_height="42dp"
+        android:layout_weight="1"
+        android:textColorHint="@color/purple_200"
+        android:hint="Prudct Description"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:layout_marginTop="270dp"
+        android:background="@drawable/input_design"
+        android:layout_marginLeft="80dp"/>
+
+    <TextView
+        android:id="@+id/product_price"
+        android:layout_width="250dp"
+        android:layout_height="42dp"
+        android:layout_weight="1"
+        android:textColorHint="@color/purple_200"
+        android:hint="Price"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:inputType="number"
+        android:padding="10dp"
+        android:layout_marginTop="320dp"
+        android:background="@drawable/input_design"
+        android:layout_marginLeft="80dp"/>
+
+
+    <CheckBox
+        android:id="@+id/isDrink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/product_price"
+        android:layout_marginLeft="70dp"
+        android:textColor="@color/purple_500"
+        android:layout_marginTop="6dp"
+        android:textSize="20dp"
+        android:text="isDrink:" />
+
+    <CheckBox
+        android:id="@+id/cold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/isDrink"
+        android:textColor="@color/purple_500"
+        android:layout_marginLeft="90dp"
+        android:text="Cold Drink:" />
+
+    <CheckBox
+        android:id="@+id/hot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/isDrink"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="3dp"
+        android:textColor="@color/purple_500"
+        android:layout_toEndOf="@+id/isDrink"
+        android:text="Hot Drink:" />
+
+    <CheckBox
+        android:id="@+id/isFood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cold"
+        android:textColor="@color/purple_500"
+        android:layout_marginTop="7dp"
+        android:layout_marginLeft="70dp"
+        android:textSize="20dp"
+        android:text="isFood:" />
+
+
+    <CheckBox
+        android:id="@+id/vegan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/isFood"
+        android:layout_marginLeft="90dp"
+        android:textColor="@color/purple_500"
+        android:text="Vegan" />
+
+    <CheckBox
+        android:id="@+id/flesh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/isFood"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="3dp"
+        android:textColor="@color/purple_500"
+        android:layout_toEndOf="@+id/vegan"
+        android:text="Flesh" />
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/buttons"
+        android:text="Save"
+        android:layout_below="@+id/flesh"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+
+
+</RelativeLayout>
